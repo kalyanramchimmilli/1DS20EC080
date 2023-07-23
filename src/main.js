@@ -10,7 +10,7 @@ const main = () => {
     try {
       setLoading(true);
       const urlList = urls.split("&").map((url) => url.trim());
-      const response = await axios.get("http://localhost:8008/numbers", {
+      const response = await axios.get("http://localhost:3000/numbers", {
         params: {
           url: urlList
         },
